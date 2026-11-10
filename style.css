@@ -1,0 +1,13 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  background-color: #FFF8F2;
+}
+.header{
+  background-color: #C9B5E4;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
