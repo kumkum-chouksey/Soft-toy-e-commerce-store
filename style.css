@@ -1,13 +1,44 @@
 *{
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+}
+body {
   background-color: #FFF8F2;
+  color: #49365D;
 }
 .header{
   background-color: #C9B5E4;
-  height: 70px;
+  height: 80px;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand{
+  background-color: #C9B5E4;
+  width: 40%;
+  padding-left: 50px;
+  padding-right: 15px;
+}
+.navbar{
+  width: 70%;
+  background-color: #C9B5E4;
+  color: #49365D;
+  display: flex;
+  justify-content:right;
+  gap: 35px;
+  padding-right: 50px;
+}
+.nav-links {
+  color: #49365D;
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav-links:hover{
+  cursor: pointer;
+  transform: scale(1.1);
 }
