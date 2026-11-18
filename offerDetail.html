@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="offerstyle.css">
+  <title>Offer section | Cozy Bug</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="brand">
+    <img src="Cozy Bug Teddy Bear Logo.png" width="220px" height="75px">
+    </div>
+    <div class="navbar">
+       <a href="index.html" class="nav-links">Home</a>
+       <a href="Product.html" class="nav-links">Product</a>
+       <a href="#" class="nav-links">Contact</a>
+       <a href="#" class="nav-links">Account</a>
+    </div>
+    <button class="menu-icon" aria-label="Toggle navigation"
+        aria-expanded="false">
+    <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+  <!-- offer section -->
+   <section class="detail-section">
+
+    <!-- LEFT SIDE: PRODUCT GALLERY -->
+    <div class="product-gallery">
+
+        <!-- Radio buttons control which image is displayed -->
+        <input type="radio" name="gallery" id="img1" checked>
+        <input type="radio" name="gallery" id="img2">
+        <input type="radio" name="gallery" id="img3">
+        <input type="radio" name="gallery" id="img4">
+
+        <!-- Large images -->
+        <div class="gallery-main">
+            <img src="offer-section-img.avif" class="image1">
+            <img src="offerDetail-img2.webp" class="image2">
+            <img src="offerDetail-img3.webp" class="image3">
+            <img src="offerDetail-img4.jpg" class="image4">
+        </div>
+
+        <!-- Small thumbnails -->
+        <div class="gallery-thumbnails">
+            <label for="img1">
+                <img src="offer-section-img.avif">
+            </label>
+            <label for="img2">
+                <img src="offerDetail-img2.webp">
+            </label>
+            <label for="img3">
+                <img src="offerDetail-img3.webp">
+            </label>
+            <label for="img4">
+                <img src="offerDetail-img4.jpg">
+            </label>
+        </div>
+    </div>
+
+
+    <!-- RIGHT SIDE: PRODUCT INFORMATION -->
+    <div class="product-info">
+        <p class="category">Home / Keychains</p>
+        <h1>Goggles Bear Plush Keychain</h1>
+        <div class="rating">
+            <span>★★★★&star;</span>
+            <small>(Customer reviews)</small>
+        </div>
+
+        <h2 class="price">₹199</h2>
+        <p>
+            Add a little cuteness to your everyday accessories!
+            This soft and fluffy plush keychain features adorable
+            goggles and charming details. Perfect for decorating
+            your backpacks, handbags and keys.
+        </p>
+
+        <h3>Quantity</h3>
+        <input type="number" value="1" min="1" class="quantity">
+
+        <div class="product-buttons">
+            <button class="btn">Add to Cart</button>
+            <button class="btn">Buy Now</button>
+        </div>
+
+        <div class="details">
+            <h3>Product Details</h3>
+            <ul>
+                <li>Soft and fluffy plush material</li>
+                <li>Lightweight and portable</li>
+                <li>Adorable goggles design</li>
+                <li>Metal keychain attachment</li>
+                <li>Perfect for bags and gifting</li>
+            </ul>
+        </div>
+    </div>
+</section>
+  <!-- FOOTER SECTION -->
+  <footer class="footer">
+     <div class="footer-box">
+      <h3>Download Our App</h3>
+      <p>Download App for Android and ios mobile phone</p>
+      <div class="footer-app">
+        <div class="footer-box-inside">
+        <p>GET IT ON</p>
+        <h3>Google Play</h3>
+      </div>
+      <div class="footer-box-inside">
+        <p>Download on the</p>
+        <h3>App Store</h3>
+      </div>
+      </div>
+     </div>
+     <div class="footer-box">
+      <img src="Cozy Bug Teddy Bear Logo.png">
+      <p>Our Purpose is to Spread Happiness, Comfort, and Love Through Every Little Cuddle.</p>
+     </div>
+     <div class="footer-box">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a>Coupons</a></li>
+        <li><a>Blog Post</a></li>
+        <li><a>Return Policy</a></li>
+        <li><a>Join Affiliate</a></li>
+      </ul>
+     </div>
+     <div class="footer-box">
+      <h3>Follow Us</h3>
+      <ul>
+        <li><a>Facebook</a></li>
+        <li><a>Twitter</a></li>
+        <li><a>Instagram</a></li>
+        <li><a>Youtube</a></li>
+      </ul>
+     </div>
+   </footer>
+   <!-- ACTIVATING TOGGLE HAMBURGER NAV-LINKS WITH JAVA SCRIPT -->
+    <script>
+    const menuIcon = document.querySelector(".menu-icon");
+    const navbar = document.querySelector(".navbar");
+
+    menuIcon.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>
