@@ -1,0 +1,50 @@
+.login-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    margin: 90px;
+    height: 500px;
+}
+.login-page img {
+   height: 500px;
+    width: 380px;
+    margin-left: 40px;
+}
+.registration {
+    height: 500px;
+    width: 380px;
+    background-color: white;
+    padding: 40px;
+}
+
+.registration h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+#username, #password {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.login-btn {
+    font-size: 18px;
+    font-weight: 500;
+    align-self: center;
+}
+@media (max-width: 900px) {
+    .login-page {
+        grid-template-columns: 1fr;
+        width: 90%;
+        height: auto;
+        margin: 30px auto;
+    }
+
+    .login-page img {
+        display: none;
+    }
+
+    .registration {
+        width: 100%;
+    }
+}

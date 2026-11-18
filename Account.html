@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="account-style.css">
+  <title>Account | Cozy Bug</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="brand">
+    <img src="Cozy Bug Teddy Bear Logo.png" width="220px" height="75px">
+    </div>
+    <div class="navbar">
+       <a href="index.html" class="nav-links">Home</a>
+       <a href="Product.html" class="nav-links">Product</a>
+       <a href="#" class="nav-links">Contact</a>
+       <a href="Account.html" class="nav-links">Account</a>
+    </div>
+    <button class="menu-icon" aria-label="Toggle navigation"
+        aria-expanded="false">
+    <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+  <!-- login page -->
+  <main class="login-page">
+      <img src="product-img4.jpg">
+      <div class="registration">
+          <form>
+            <h2>Login</h2>
+            <label for="username">Username :</label>
+            <input type="text" placeholder="Username" id="username">
+            <br>
+            <label for="password">Password :</label>
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit" class="btn login-btn">Login</button>
+          </form>
+      </div>
+  </main>
+<!-- FOOTER SECTION -->
+  <footer class="footer">
+     <div class="footer-box">
+      <h3>Download Our App</h3>
+      <p>Download App for Android and ios mobile phone</p>
+      <div class="footer-app">
+        <div class="footer-box-inside">
+        <p>GET IT ON</p>
+        <h3>Google Play</h3>
+      </div>
+      <div class="footer-box-inside">
+        <p>Download on the</p>
+        <h3>App Store</h3>
+      </div>
+      </div>
+     </div>
+     <div class="footer-box">
+      <img src="Cozy Bug Teddy Bear Logo.png">
+      <p>Our Purpose is to Spread Happiness, Comfort, and Love Through Every Little Cuddle.</p>
+     </div>
+     <div class="footer-box">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a>Coupons</a></li>
+        <li><a>Blog Post</a></li>
+        <li><a>Return Policy</a></li>
+        <li><a>Join Affiliate</a></li>
+      </ul>
+     </div>
+     <div class="footer-box">
+      <h3>Follow Us</h3>
+      <ul>
+        <li><a>Facebook</a></li>
+        <li><a>Twitter</a></li>
+        <li><a>Instagram</a></li>
+        <li><a>Youtube</a></li>
+      </ul>
+     </div>
+   </footer>
+   <!-- ACTIVATING TOGGLE HAMBURGER NAV-LINKS WITH JAVA SCRIPT -->
+    <script>
+    const menuIcon = document.querySelector(".menu-icon");
+    const navbar = document.querySelector(".navbar");
+
+    menuIcon.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>
